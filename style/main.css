@@ -1,0 +1,158 @@
+/* Importação de Fontes em bases(bd) online*/
+@import url(//db.onlinewebfonts.com/c/123c7e674188c97798dd39cd41ff2d85?family=Brown+Regular);
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+
+:root {
+    --branco: #f8f7ee;;
+    --preto: rgba(0, 0, 0, 0.94);
+    --cinza: #666;
+    --violeta: darkviolet;
+}
+
+/*Realiza um reset simples para alinhar/padronizar a exibição na maiorira dos navegadores.*/
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+/*Adiciona um padrão de fonte e caracteristicas da mesma a "todo" site.*/
+body {
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branco);
+}
+
+.container {
+    margin-left: 35px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-full {
+    display: flex;
+    flex-direction: row;
+}
+
+header .logo {
+    margin-left: 0px;
+    color: var(--violeta);
+    font-family: "brown regular", sans-serif;
+    font-size: 50px;
+}
+
+header .logo-caracter-plus {
+    margin-left: 0px;
+    color: var(--branco);
+    font-family: "brown regular", sans-serif;
+    font-size: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+    font-family: "brown regular", sans-serif;
+}
+
+/*Muda a cor quando o mouse é passado sobre o elemento.*/
+header nav a:hover {
+    color: var(--violeta);
+}
+
+main .filme-principal {
+    margin-top: 5px;
+    font-size: 20px;
+    /*Adciona uma imagem e escurece a mesma com efeito gradiente.*/
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50) 100%), url("/img/background-home.jpg");    
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Não é necessario colocar o "main" como no bloco acima, apenas se vc quisesse alterar uma outra classe de um outro "main" (ou outra div) caso existisse.*/
+.filme-principal .container {
+    width: 60%;
+}
+
+.filme-principal .sinopse {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: raleway, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.50);
+    border: none;
+    color: var(--branco);
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    /*Muda o cursor para Ponteiro quando passado sobre o botão.*/
+    cursor: pointer;
+    /*Adiciona animação de transição da propriedade ":hover".*/
+    transition: 0.3s ease all;
+}
+
+/*Inverte as cores dos botões quando o mouse passa sobre o botão.*/
+.botao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+/*Classe destinada a padronização das imagens no carousel.*/
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel-filmes {
+    margin-top: 10px;
+}
+
+.carousel-filmes edit {
+    color: var(--violeta);    
+}
+
+.carousel-filmes h3 {
+    margin-bottom: 10px;
+    font-family: "brown regular", sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: var(--branco);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--violeta);
+}

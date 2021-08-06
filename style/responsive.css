@@ -1,0 +1,21 @@
+/*Configuranção de condição de exibição/responsividade da página quando ela está sendo exibida a partir de um determinado tamanho.*/
+
+/*Tamnaho mínimo de tela.*/
+@media screen and (max-width: 600px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 200px;
+    }
+}
+
+/*Tamnaho máximo de tela.*/
+@media screen and (min-width: 1200px) {
+    .sinopse {
+        width: 70%;
+    }
+}
